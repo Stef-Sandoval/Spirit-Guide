@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spirit Guide</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Federant&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="questions.css" />
+    <link rel="stylesheet" href="result.css" />
+    <script src="form.js" defer></script>
+    <script src="slider.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <img src="./img/Las galaxias más cercanas a la Tierra.jpeg" />
+      <img id="flecha_forward" src="./img/flecha.png" alt="" />
+      <img id="flecha_back" src="./img/flecha.png" alt="" />
+      <section class="container">
+        <form id="slider">
+          <div class="question" id="q0">
+            <h1>Uncover Your Inner Spirit Guide</h1>
+            <button class="play" id="play">Play</button>
+          </div>
+          <div class="question" id="q1">
+            <h2>What environment do you like the most?</h2>
+            <div>
+              <input type="radio" id="q1r1" name="radio-q1" value="fish,octo" />
+              <label for="q1r1"
+                ><img
+                  src="./img/My Guide To Orange County, California.jpeg"
+                  alt=""
+                  srcset=""
+              /></label>
+            </div>
+
+            <div>
+              <input type="radio" id="q1r2" name="radio-q1" value="bear,wolf" />
+              <label for="q1r2"
+                ><img src="./img/desierto.jpeg" alt="" srcset=""
+              /></label>
+            </div>
+            <div>
+              <input type="radio" id="q1r3" name="radio-q1" value="eagl,owls" />
+              <label for="q1r3"
+                ><img src="./img/forest.jpeg" alt="" srcset=""
+              /></label>
+            </div>
+            <div>
+              <input type="radio" id="q1r4" name="radio-q1" value="chet,cmel" />
+              <label for="q1r4"
+                ><img
+                  src="./img/Sunset Cloudscapes Phone Wallpaper.jpeg"
+                  alt=""
+                  srcset=""
+              /></label>
+            </div>
+          </div>
+          <div class="question" id="q2">
+            <h2>Which of the two words represents you more?</h2>
+            <div class="q2-img">
+              <img src="./img/relax.png" alt="" />
+              <img src="./img/Sticker-removebg-preview.png" alt="" />
+            </div>
+            <div class="q2-h2">
+              <h2>Calm</h2>
+              <h2>Dynamism</h2>
+            </div>
+
+            <input class="q2-r" type="range" name="range2" id="2" />
+          </div>
+          <div class="question" id="q3">
+            <h1>Choose the words that represent you the most</h1>
+            <div class="q3-h2">
+              <div>
+                <label for="q3r1"> <h2>Serenity</h2></label>
+                <input
+                  type="checkbox"
+                  name="check3"
+                  value="fish"
+                  class="q3-c"
+                  id="q3r1"
+                />
+              </div>
+              <div>
+                <label for="q3r2"> <h2>Creativity</h2></label>
+                <input
+                  type="checkbox"
+                  name="check3"
+                  value="octo"
+                  class="q3-c"
+                  id="q3r2"
+                />
+              </div>
+              <div>
+                <label for="q3r3"> <h2>Strength</h2></label>
+                <input
+                  type="checkbox"
+                  name="check3"
+                  value="bear"
+                  class="q3-c"
+                  id="q3r3"
+                />
+              </div>
+              <div>
+                <label for="q3r4"> <h2>Loyalty</h2></label>
+                <input
+                  type="checkbox"
+                  name="check3"
+                  value="wolf"
+                  class="q3-c"
+                  id="q3r4"
+                />
+              </div>
+              <div>
+                <label for="q3r5"> <h2>Clarity</h2></label>
+                <input
+                  type="checkbox"
+                  name="check3"
+                  value="eagl"
+                  class="q3-c"
+                  id="q3r5"
+                />
+              </div>
+              <div>
+                <label for="q3r6"> <h2>Wisdom</h2></label>
+                <input
+                  type="checkbox"
+                  name="check3"
+                  value="owls"
+                  class="q3-c"
+                  id="q3r6"
+                />
+              </div>
+              <div>
+                <label for="q3r7"> <h2>Agility</h2></label>
+                <input
+                  type="checkbox"
+                  name="check3"
+                  value="chet"
+                  class="q3-c"
+                  id="q3r7"
+                />
+              </div>
+              <div>
+                <label for="q3r8"> <h2>Endurance</h2></label>
+                <input
+                  type="checkbox"
+                  name="check3"
+                  value="cmel"
+                  class="q3-c"
+                  id="q3r8"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="question" id="q4">
+            <h1>
+              "Which of the following statements do you identify with the most?"
+            </h1>
+            <div class="q4-h2">
+              <div>
+                <input type="checkbox" name="check4" value="fish" id="q4r1" />
+                <label for="q4r1">
+                  <h2>"I feel at peace when I'm near water."</h2>
+                </label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="check4" value="bear" id="q4r2" />
+                <label for="q4r2">
+                  <h2>"Nature gives me strength and resilience."</h2>
+                </label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="check4" value="eagl" id="q4r3" />
+                <label for="q4r3"
+                  ><h2>
+                    "I like to observe the world from an elevated perspective."
+                  </h2></label
+                >
+              </div>
+              <div>
+                <input type="checkbox" name="check4" value="chet" id="q4r4" />
+                <label for="q4r4">
+                  <h2>"I move quickly and make agile decisions."</h2>
+                </label>
+              </div>
+              <div>
+                <input type="checkbox" name="check4" value="octo" id="q4r5" />
+                <label for="q4r5">
+                  <h2>"I find creative solutions to problems."</h2>
+                </label>
+              </div>
+              <div>
+                <input type="checkbox" name="check4" value="wolf" id="q4r6" />
+                <label for="q4r6">
+                  <h2>"I am loyal and work well in a team."</h2>
+                </label>
+              </div>
+              <div>
+                <input type="checkbox" name="check4" value="owls" id="q4r7" />
+                <label for="q4r7">
+                  <h2>"I value wisdom and reflection."</h2>
+                </label>
+              </div>
+              <div>
+                <input type="checkbox" name="check4" value="cmel" id="q4r8" />
+                <label for="q4r8">
+                  <h2>"I am resilient and adapt to difficult conditions."</h2>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question" id="q5">
+            <h2>Which zodiac sign do you feel represents you the most?</h2>
+            <div>
+              <input type="radio" id="q5r1" name="radio-q5" value="chet" />
+              <label for="q5r1"
+                ><img
+                  src="./img/'Aries Zodiac Monster' Poster, picture, metal print, paint by Zuzana Ziakova _ Displate.jpeg"
+                  alt=""
+              /></label>
+            </div>
+            <div>
+              <input type="radio" id="q5r2" name="radio-q5" value="bear" />
+              <label for="q5r2"><img src="./img/tauro.jpeg" alt="" /></label>
+            </div>
+            <div>
+              <input type="radio" id="q5r3" name="radio-q5" value="octo" />
+              <label for="q5r3"
+                ><img
+                  src="./img/Signe astrologique _ date et significations, le guide complet des signes du zodiaque.jpeg"
+                  alt=""
+              /></label>
+            </div>
+            <div>
+              <input type="radio" id="q5r4" name="radio-q5" value="octo" />
+              <label for="q5r4"><img src="./img/cancer.jpeg" alt="" /></label>
+            </div>
+            <div>
+              <input type="radio" id="q5r5" name="radio-q5" value="cmel" />
+              <label for="q5r5"
+                ><img
+                  src="./img/'Leo Zodiac Monster' Poster, picture, metal print, paint by Zuzana Ziakova _ Displate.jpeg"
+                  alt=""
+              /></label>
+            </div>
+            <div>
+              <input type="radio" id="q5r6" name="radio-q5" value="owls" />
+              <label for="q5r6"
+                ><img
+                  src="./img/'Virgo Zodiac Monster' Poster, picture, metal print, paint by Zuzana Ziakova _ Displate.jpeg"
+                  alt=""
+              /></label>
+            </div>
+            <div>
+              <input type="radio" id="q5r7" name="radio-q5" value="eagl" />
+              <label for="q5r7"
+                ><img src="./img/Karo Becker.jpeg" alt=""
+              /></label>
+            </div>
+            <div>
+              <input type="radio" id="q5r8" name="radio-q5" value="fish" />
+              <label for="q5r8"><img src="./img/scorpio.jpeg" alt="" /></label>
+            </div>
+            <div>
+              <input type="radio" id="q5r9" name="radio-q5" value="eagl" />
+              <label for="q5r9"
+                ><img
+                  src="./img/'Sagittarius Zodiac Monster' Poster, picture, metal print, paint by Zuzana Ziakova _ Displate.jpeg"
+                  alt=""
+              /></label>
+            </div>
+            <div>
+              <input type="radio" id="q5r10" name="radio-q5" value="wolf" />
+              <label for="q5r10"
+                ><img src="./img/Zodiac Signs _ Tarot Cards.jpeg" alt=""
+              /></label>
+            </div>
+            <div>
+              <input type="radio" id="q5r11" name="radio-q5" value="chet" />
+              <label for="q5r11"
+                ><img
+                  src="./img/'Aquarius Zodiac Monster' Poster, picture, metal print, paint by Zuzana Ziakova _ Displate.jpeg"
+                  alt=""
+              /></label>
+            </div>
+            <div>
+              <input type="radio" id="q5r12" name="radio-q5" value="fish" />
+              <label for="q5r12"><img src="./img/piscis.jpeg" alt="" /></label>
+            </div>
+          </div>
+
+          <div class="question" id="q6">
+            <button id="submit" class="b-q6">
+              <img src="./img/send.png" alt="" />
+            </button>
+          </div>
+        </form>
+      </section>
+      <section id="result">
+        <div class="answer">
+          <h1 id="res_msg">
+            Wise, introspective, and highly observant, you possess the
+            thoughtful and reflective nature of an owl. You prefer to take your
+            time to analyze and understand situations before making decisions,
+            valuing precision and accuracy in everything you do. Solitude and
+            quiet contemplation are where you find your strength, allowing you
+            to see beyond the surface and uncover hidden truths. Your deep
+            appreciation for knowledge and reflection makes you a source of
+            insight and guidance for others.
+          </h1>
+          <img id="res_img" src="./img/camello.jpeg" alt="animaal" />
+        </div>
+      </section>
+      <section id="solo">
+        <p>solo funciona en computador</p>
+      </section>
+    </main>
+  </body>
+</html>

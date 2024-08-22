@@ -1,0 +1,158 @@
+.question {
+  width: 750px;
+  height: 500px;
+  border: 1px solid red;
+}
+
+#q0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 28px;
+  color: #11184f;
+}
+
+.play {
+  background-color: #f0f0efa8;
+  border: none;
+  outline: none;
+  transition: all 500ms;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 24px;
+  color: #11184f;
+}
+
+.play:hover {
+  box-shadow: 6px 6px 8px #bd7bdd;
+}
+#q1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content 1fr 1fr;
+  padding: 30px;
+}
+#q1 img {
+  width: 340px;
+  height: 200px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#q1 h2 {
+  font-size: 20px;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+#q1 input {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+#q2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#q2 img {
+  width: 100px;
+  height: 100px;
+}
+
+.q2-img {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.q2-r {
+  width: 80%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.q2-h2 {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 45px;
+}
+#q3 h1 {
+  display: flex;
+  justify-content: center;
+}
+.q3-h2 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 20px;
+  margin-top: 45px;
+}
+.q3-c {
+  position: absolute;
+  z-index: 10;
+  right: 110%;
+  top: 50%;
+  cursor: pointer;
+}
+#q4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#q4 h1 {
+  margin-bottom: 50px;
+}
+.q4-h2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 14px;
+  cursor: pointer;
+}
+#q5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: max-content 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#q5 h2 {
+  font-size: 20px;
+  grid-column: 1/-1;
+  text-align: center;
+}
+#q5 img {
+  width: 100px;
+  height: 220px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 3px;
+}
+#q5 input {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+#q6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.b-q6 {
+  background-color: #000000;
+  border: none;
+  outline: none;
+  width: 30%;
+  transition: all 500ms;
+  cursor: pointer;
+  border-radius: 100px;
+}
+.b-q6:hover {
+  box-shadow: 8px 8px 10px #e29ef1;
+}
